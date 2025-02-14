@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { ChevronDown } from "lucide-react";
 
 interface FAQItemProps {
   question: string;
@@ -19,14 +20,11 @@ export function FAQItem({ question, answer, className }: FAQItemProps) {
           className="flex w-full items-center justify-between flex-wrap text-lg font-medium leading-none text-white"
         >
           <span className="flex-1 text-left">{question}</span>
-          <img
-            src={
-              isOpen
-                ? "https://cdn.builder.io/api/v1/image/assets/6c44b7f2525849e284499cfe9821ff0c/e12f1aeaf5d3587b82fad1a439992ff19c3a398a62de685163c09e3b5632920f"
-                : "https://cdn.builder.io/api/v1/image/assets/6c44b7f2525849e284499cfe9821ff0c/6152d74f97da03cb4b80b6e98a5b4662eeca0141f23e4a50d09371bcf1647260"
-            }
-            alt=""
-            className="w-6 h-6"
+          <ChevronDown 
+            className={cn(
+              "w-6 h-6 transition-transform duration-200",
+              isOpen ? "rotate-180" : ""
+            )}
           />
         </button>
         {isOpen && answer && (
