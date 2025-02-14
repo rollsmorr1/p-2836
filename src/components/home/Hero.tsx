@@ -2,7 +2,7 @@
 export function Hero() {
   return <section className="flex w-full flex-col overflow-hidden items-center px-52 max-md:max-w-full max-md:px-5 py-[76px]">
       <div className="flex w-[717px] max-w-full flex-col items-center">
-        <div className="self-stretch bg-[rgba(25,25,25,1)] overflow-hidden text-base font-ibm-plex text-white font-normal leading-none px-2 py-1.5 rounded-lg">
+        <div className="inline-flex mx-auto bg-[rgba(25,25,25,1)] overflow-hidden text-base font-ibm-plex text-white font-normal leading-none px-2 py-1.5 rounded-lg">
           ✨ Deploy your first AI Agent today in under 5 minutes!
         </div>
         <div className="self-stretch flex w-full flex-col items-center text-center mt-6 max-md:max-w-full">
