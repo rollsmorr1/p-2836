@@ -49,7 +49,7 @@ export function PricingCard({
         </div>
         <div className="border-t border-[#3A3A3A] mt-4" />
       </div>
-      <ul className="mt-6 space-y-4">
+      <ul className="mt-4 space-y-4">
         {features.map((feature, index) => (
           <li
             key={index}
@@ -62,7 +62,7 @@ export function PricingCard({
       </ul>
       <button
         className={cn(
-          "w-full min-h-11 text-sm font-medium text-center leading-none mt-6 px-3 rounded-xl",
+          "w-full min-h-11 text-sm font-medium text-center leading-none mt-4 px-3 rounded-xl",
           highlighted
             ? "bg-[#FFE629] text-black"
             : "border border-[#606060] text-white",
