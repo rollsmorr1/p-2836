@@ -36,7 +36,7 @@ export function PricingSection() {
       <h2 className="text-[52px] font-semibold text-center self-center max-md:text-[40px]">
         Pricing
       </h2>
-      <div className="flex min-h-[374px] w-full gap-5 flex-wrap mt-[70px] max-md:max-w-full max-md:mt-10">
+      <div className="flex justify-center w-full gap-8 mt-[70px] max-md:flex-col max-md:mt-10">
         {pricingPlans.map((plan, index) => (
           <PricingCard key={index} {...plan} />
         ))}

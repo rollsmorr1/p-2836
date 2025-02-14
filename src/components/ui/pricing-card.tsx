@@ -1,7 +1,10 @@
+
 import { cn } from "@/lib/utils";
+
 interface PricingFeature {
   text: string;
 }
+
 interface PricingCardProps {
   title: string;
   description: string;
@@ -11,6 +14,7 @@ interface PricingCardProps {
   highlighted?: boolean;
   className?: string;
 }
+
 export function PricingCard({
   title,
   description,
@@ -20,7 +24,14 @@ export function PricingCard({
   highlighted = false,
   className
 }: PricingCardProps) {
-  return <div className="">
+  return (
+    <div
+      className={cn(
+        "border flex-1 min-w-[360px] p-4 rounded-xl",
+        highlighted ? "border-[#FFE629]" : "border-[#3A3A3A]",
+        className
+      )}
+    >
       <div className="w-full font-bold">
         <div className="flex w-full flex-col items-stretch justify-center">
           <h3 className="text-lg leading-none text-white">{title}</h3>
@@ -39,13 +50,24 @@ export function PricingCard({
         <div className="border-t border-[#3A3A3A] mt-4" />
       </div>
       <ul className="mt-4 space-y-4">
-        {features.map((feature, index) => <li key={index} className="flex items-center gap-2 text-sm font-normal leading-none text-white/70">
+        {features.map((feature, index) => (
+          <li
+            key={index}
+            className="flex items-center gap-2 text-sm font-normal leading-none text-white/70"
+          >
             <span className="text-[#FFE629]">•</span>
             {feature.text}
-          </li>)}
+          </li>
+        ))}
       </ul>
-      <button className={cn("w-full min-h-11 text-sm font-medium text-center leading-none mt-4 px-3 rounded-xl", highlighted ? "bg-[#FFE629] text-black" : "border border-[#606060] text-white")}>
+      <button
+        className={cn(
+          "w-full min-h-11 text-sm font-medium text-center leading-none mt-4 px-3 rounded-xl",
+          highlighted ? "bg-[#FFE629] text-black" : "border border-[#606060] text-white"
+        )}
+      >
         {ctaText}
       </button>
-    </div>;
+    </div>
+  );
 }
