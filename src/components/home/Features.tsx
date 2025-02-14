@@ -1,3 +1,4 @@
+
 import { FeatureCard } from "../ui/feature-card";
 
 export function Features() {
@@ -32,7 +33,7 @@ export function Features() {
   ];
 
   return (
-    <section className="mt-[76px] max-md:mt-10 max-md:max-w-full">
+    <section className="mt-[76px] mb-[76px] max-md:mt-10 max-md:max-w-full">
       <div className="flex items-stretch gap-4 flex-wrap max-md:max-w-full justify-center">
         {topFeatures.map((feature, index) => (
           <FeatureCard key={index} {...feature} />
