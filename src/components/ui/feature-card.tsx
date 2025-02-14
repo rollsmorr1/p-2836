@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 
 interface FeatureCardProps {
@@ -20,7 +21,7 @@ export function FeatureCard({ icon, title, className }: FeatureCardProps) {
         alt=""
         className="aspect-[1] object-contain w-[60px]"
       />
-      <h3 className="text-[38px] text-[#010101] font-medium leading-[38px] mt-4 whitespace-pre-line">
+      <h3 className="text-[38px] text-white font-medium leading-[38px] mt-4 whitespace-pre-line">
         {title}
       </h3>
     </div>

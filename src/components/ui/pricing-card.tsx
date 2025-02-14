@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 
 interface PricingFeature {
@@ -33,14 +34,14 @@ export function PricingCard({
     >
       <div className="w-full font-bold">
         <div className="flex w-full flex-col items-stretch justify-center">
-          <h3 className="text-lg leading-none text-[#010101]">{title}</h3>
-          <p className="text-sm font-normal leading-none mt-2 text-[#010101]">
+          <h3 className="text-lg leading-none text-white">{title}</h3>
+          <p className="text-sm font-normal leading-none mt-2 text-white/70">
             {description}
           </p>
           <div className="text-[34px] leading-none mt-2">
             <span className="font-medium text-lg leading-6 text-white">$</span>
             <span className="text-white">{price}</span>
-            <span className="font-medium text-lg leading-6 text-white">
+            <span className="font-medium text-lg leading-6 text-white/70">
               {" "}
               per agent /mo
             </span>
@@ -52,7 +53,7 @@ export function PricingCard({
         {features.map((feature, index) => (
           <li
             key={index}
-            className="flex items-center gap-2 text-sm font-normal leading-none text-[#010101]"
+            className="flex items-center gap-2 text-sm font-normal leading-none text-white/70"
           >
             <span className="text-[#FFE629]">•</span>
             {feature.text}
@@ -64,7 +65,7 @@ export function PricingCard({
           "w-full min-h-11 text-sm font-medium text-center leading-none mt-6 px-3 rounded-xl",
           highlighted
             ? "bg-[#FFE629] text-black"
-            : "border border-[#606060] text-[#010101]",
+            : "border border-[#606060] text-white",
         )}
       >
         {ctaText}

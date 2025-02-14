@@ -1,3 +1,4 @@
+
 export function CustomizeSection() {
   const benefits = [
     {
@@ -15,19 +16,19 @@ export function CustomizeSection() {
   ];
 
   return (
-    <section className="flex w-full items-center gap-10 overflow-hidden text-[#010101] justify-center flex-wrap py-20 border-t border-[#3A3A3A] max-md:max-w-full">
+    <section className="flex w-full items-center gap-10 overflow-hidden text-white justify-center flex-wrap py-20 border-t border-[#3A3A3A] max-md:max-w-full">
       <div className="self-stretch flex min-w-60 flex-col w-[490px] my-auto max-md:max-w-full">
         <div className="max-w-full w-[546px]">
           <h2 className="text-[52px] font-semibold max-md:max-w-full max-md:text-[40px]">
             Customize agents
           </h2>
-          <p className="text-lg font-medium leading-6 mt-6 max-md:max-w-full">
+          <p className="text-lg text-white/70 font-medium leading-6 mt-6 max-md:max-w-full">
             Design your own agent and start chatting with it in no time.
             Customize it with unique features and launch it across your favorite
             social media platforms.
           </p>
         </div>
-        <div className="w-[382px] max-w-full text-[13px] font-medium uppercase tracking-[2.56px] mt-12 max-md:mt-10">
+        <div className="w-[382px] max-w-full text-[13px] font-medium text-white/70 uppercase tracking-[2.56px] mt-12 max-md:mt-10">
           {benefits.map((benefit, index) => (
             <div
               key={index}

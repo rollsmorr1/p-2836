@@ -1,3 +1,4 @@
+
 export function ManageSection() {
   const benefits = [
     {
@@ -15,7 +16,7 @@ export function ManageSection() {
   ];
 
   return (
-    <section className="flex w-full items-center gap-10 overflow-hidden text-[#010101] justify-center flex-wrap py-20 border-t border-[#3A3A3A] max-md:max-w-full">
+    <section className="flex w-full items-center gap-10 overflow-hidden text-white justify-center flex-wrap py-20 border-t border-[#3A3A3A] max-md:max-w-full">
       <img
         src="https://cdn.builder.io/api/v1/image/assets/6c44b7f2525849e284499cfe9821ff0c/9345abc1535d5fdb6e913ff90999dd079679731ca7f1216d8927fdee63ee8c5e"
         alt="Manage agents interface"
@@ -26,13 +27,13 @@ export function ManageSection() {
           <h2 className="text-[52px] font-semibold max-md:text-[40px]">
             Manage agents
           </h2>
-          <p className="text-lg font-medium leading-6 mt-6 max-md:max-w-full">
+          <p className="text-lg text-white/70 font-medium leading-6 mt-6 max-md:max-w-full">
             Design your own agent and start chatting with it in no time.
             Customize it with unique features and launch it across your favorite
             social media platforms.
           </p>
         </div>
-        <div className="w-[382px] max-w-full text-[13px] font-medium uppercase tracking-[2.56px] mt-12 max-md:mt-10">
+        <div className="w-[382px] max-w-full text-[13px] font-medium text-white/70 uppercase tracking-[2.56px] mt-12 max-md:mt-10">
           {benefits.map((benefit, index) => (
             <div
               key={index}

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -15,7 +16,7 @@ export function FAQItem({ question, answer, className }: FAQItemProps) {
       <div className="w-full">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex w-full items-center justify-between flex-wrap text-lg font-medium leading-none text-[#010101]"
+          className="flex w-full items-center justify-between flex-wrap text-lg font-medium leading-none text-white"
         >
           <span className="flex-1 text-left">{question}</span>
           <img
@@ -29,7 +30,7 @@ export function FAQItem({ question, answer, className }: FAQItemProps) {
           />
         </button>
         {isOpen && answer && (
-          <p className="mt-4 text-sm text-[#010101]">{answer}</p>
+          <p className="mt-4 text-sm text-white/70">{answer}</p>
         )}
       </div>
       <div className="border-t border-[#3A3A3A] mt-6" />

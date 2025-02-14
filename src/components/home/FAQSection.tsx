@@ -1,3 +1,4 @@
+
 import { FAQItem } from "../ui/faq-item";
 
 export function FAQSection() {
@@ -23,13 +24,13 @@ export function FAQSection() {
   ];
 
   return (
-    <section className="w-full overflow-hidden text-[#010101] px-[236px] py-[88px] border-t border-[#3A3A3A] max-md:max-w-full max-md:px-5">
+    <section className="w-full overflow-hidden text-white px-[236px] py-[88px] border-t border-[#3A3A3A] max-md:max-w-full max-md:px-5">
       <div className="w-full max-md:max-w-full">
         <div className="max-md:max-w-full">
           <h2 className="text-[52px] font-semibold max-md:max-w-full max-md:text-[40px]">
             FAQ
           </h2>
-          <p className="text-lg font-medium leading-none mt-6 max-md:max-w-full">
+          <p className="text-lg text-white/70 font-medium leading-none mt-6 max-md:max-w-full">
             Solutions to many of our most commonly asked questions.
           </p>
         </div>

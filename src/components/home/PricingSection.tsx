@@ -1,3 +1,4 @@
+
 import { PricingCard } from "../ui/pricing-card";
 
 export function PricingSection() {
@@ -31,7 +32,7 @@ export function PricingSection() {
   ];
 
   return (
-    <section className="flex w-full flex-col overflow-hidden items-stretch text-[#010101] px-[217px] py-[72px] border-t border-[#3A3A3A] max-md:max-w-full max-md:px-5">
+    <section className="flex w-full flex-col overflow-hidden items-stretch text-white px-[217px] py-[72px] border-t border-[#3A3A3A] max-md:max-w-full max-md:px-5">
       <h2 className="text-[52px] font-semibold text-center self-center max-md:text-[40px]">
         Pricing
       </h2>
