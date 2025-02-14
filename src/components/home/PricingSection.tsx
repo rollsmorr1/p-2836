@@ -5,7 +5,7 @@ export function PricingSection() {
   const pricingPlans = [
     {
       title: "Standard Agent Hosting",
-      description: "Simple and efficient agent hosting solution - Coming Soon!",
+      description: "A simple and efficient agent hosting solution with everything you need to get started - Coming Soon!",
       price: "10",
       features: [
         { text: "Standard security features" },
@@ -18,7 +18,7 @@ export function PricingSection() {
     {
       title: "TEE Agent Hosting",
       description:
-        "Maximum security & privacy with Trusted Execution Environments.",
+        "Maximum security & privacy with Trusted Execution Environments for enterprise-grade protection.",
       price: "20",
       features: [
         { text: "Trusted Execution Environment (TEE)" },
